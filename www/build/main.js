@@ -6,7 +6,7 @@ webpackJsonp([0],{
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TransfertListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_leaflet__ = __webpack_require__(245);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_leaflet___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_leaflet__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__providers_transfert_service_mock__ = __webpack_require__(50);
@@ -86,7 +86,7 @@ var TransfertListPage = (function () {
 }());
 TransfertListPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-transfert-list',template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\pages\transfert-list\transfert-list.html"*/'<ion-header>\n\n        <ion-header>\n\n                <ion-navbar>\n\n                    <button ion-button  hide-back-button="true" menuToggle>\n\n                        <ion-icon name="menu"></ion-icon>\n\n                    </button>\n\n            \n\n                    <ion-searchbar [(ngModel)]="searchKey" (ionInput)="onInput($event)"\n\n                               (ionCancel)="onCancel($event)"></ion-searchbar>\n\n                </ion-navbar>\n\n        </ion-header>\n\n    \n\n</ion-header>\n\n\n\n<ion-content class="transfer-list">\n\n\n\n    <ion-list *ngIf="viewMode===\'list\'">\n\n\n\n        <ion-item-sliding *ngFor="let transfer of transfers">\n\n            <button ion-item (click)="openPropertyDetail(transfer)">\n\n                <ion-thumbnail item-left>\n\n                    <img src="{{transfer.thumbnail}}"/>\n\n                </ion-thumbnail>\n\n                <h2>{{transfer.title}}</h2>\n\n                <p>{{transfer.city}}, {{transfer.state}} ∙ {{ transfer.price }}</p>\n\n            </button>\n\n            <ion-item-options>\n\n                <button danger (click)="deleteItem(transfer)">Delete</button>\n\n            </ion-item-options>\n\n        </ion-item-sliding>\n\n\n\n    </ion-list>\n\n\n\n    <div *ngIf="viewMode===\'map\'" style="width:100%;height:100%;" id="map"></div>\n\n\n\n</ion-content>\n\n\n\n<ion-footer padding>\n\n    <ion-segment [(ngModel)]="viewMode">\n\n        <ion-segment-button value="list">\n\n            <ion-icon name="list"></ion-icon>\n\n        </ion-segment-button>\n\n        <ion-segment-button value="map" (ionSelect)="showMap()">\n\n            <ion-icon name="map"></ion-icon>\n\n        </ion-segment-button>\n\n    </ion-segment>\n\n</ion-footer>\n\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\pages\transfert-list\transfert-list.html"*/
+        selector: 'page-transfert-list',template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\transfert-list\transfert-list.html"*/'<ion-header>\n\n        <ion-header>\n\n                <ion-navbar>\n\n                    <button ion-button  hide-back-button="true" menuToggle>\n\n                        <ion-icon name="menu"></ion-icon>\n\n                    </button>\n\n            \n\n                    <ion-searchbar [(ngModel)]="searchKey" (ionInput)="onInput($event)"\n\n                               (ionCancel)="onCancel($event)"></ion-searchbar>\n\n                </ion-navbar>\n\n        </ion-header>\n\n    \n\n</ion-header>\n\n\n\n<ion-content class="transfer-list">\n\n\n\n    <ion-list *ngIf="viewMode===\'list\'">\n\n\n\n        <ion-item-sliding *ngFor="let transfer of transfers">\n\n            <button ion-item (click)="openPropertyDetail(transfer)">\n\n                <ion-thumbnail item-left>\n\n                    <img src="{{transfer.thumbnail}}"/>\n\n                </ion-thumbnail>\n\n                <h2>{{transfer.title}}</h2>\n\n                <p>{{transfer.city}}, {{transfer.state}} ∙ {{ transfer.price }}</p>\n\n            </button>\n\n            <ion-item-options>\n\n                <button danger (click)="deleteItem(transfer)">Delete</button>\n\n            </ion-item-options>\n\n        </ion-item-sliding>\n\n\n\n    </ion-list>\n\n\n\n    <div *ngIf="viewMode===\'map\'" style="width:100%;height:100%;" id="map"></div>\n\n\n\n</ion-content>\n\n\n\n<ion-footer padding>\n\n    <ion-segment [(ngModel)]="viewMode">\n\n        <ion-segment-button value="list">\n\n            <ion-icon name="list"></ion-icon>\n\n        </ion-segment-button>\n\n        <ion-segment-button value="map" (ionSelect)="showMap()">\n\n            <ion-icon name="map"></ion-icon>\n\n        </ion-segment-button>\n\n    </ion-segment>\n\n</ion-footer>\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\transfert-list\transfert-list.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_3__providers_transfert_service_mock__["a" /* TransfertService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["c" /* Config */]])
 ], TransfertListPage);
@@ -101,7 +101,7 @@ TransfertListPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TransfertDetailPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_transfert_service_mock__ = __webpack_require__(50);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -167,7 +167,7 @@ var TransfertDetailPage = (function () {
 }());
 TransfertDetailPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-transfert-detail',template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\pages\transfert-detail\transfert-detail.html"*/'<ion-header>\n\n    <ion-navbar  hide-back-button="true">\n\n        <ion-title>Transfert</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <ion-card *ngIf="property.id">\n\n        <ion-card-content>\n\n            <h2 class="card-title">Detail de transaction </h2>\n\n            \n\n        </ion-card-content>\n\n        <ion-list>\n\n\n\n            <ion-item>\n\n                <ion-icon item-left name="moon"></ion-icon>\n\n                <h3>Descripition</h3>\n\n                <ion-note item-right>{{property.title}}</ion-note>\n\n            </ion-item>\n\n            \n\n            <ion-item>\n\n                <ion-icon item-left name="md-cash"></ion-icon>\n\n                <h3>Montant</h3>\n\n                <ion-note item-right>{{property.price}}</ion-note>\n\n            </ion-item>\n\n            <ion-item>\n\n                   <ion-icon item-left name="md-clock"></ion-icon>\n\n                    <h3>Date </h3>\n\n                    <ion-note item-right>20/05/2018 ,12:27 </ion-note>\n\n                </ion-item>\n\n        </ion-list>\n\n\n\n        <ion-item>\n\n            <button ion-button icon-left (click)="favorite(property)" clear item-left>\n\n                <ion-icon name="md-checkmark"></ion-icon>\n\n                Valider la transaction\n\n            </button>\n\n          \n\n        </ion-item>\n\n\n\n    </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\pages\transfert-detail\transfert-detail.html"*/
+        selector: 'page-transfert-detail',template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\transfert-detail\transfert-detail.html"*/'<ion-header>\n\n    <ion-navbar  hide-back-button="true">\n\n        <ion-title>Transfert</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <ion-card *ngIf="property.id">\n\n        <ion-card-content>\n\n            <h2 class="card-title">Detail de transaction </h2>\n\n            \n\n        </ion-card-content>\n\n        <ion-list>\n\n\n\n            <ion-item>\n\n                <ion-icon item-left name="moon"></ion-icon>\n\n                <h3>Descripition</h3>\n\n                <ion-note item-right>{{property.title}}</ion-note>\n\n            </ion-item>\n\n            \n\n            <ion-item>\n\n                <ion-icon item-left name="md-cash"></ion-icon>\n\n                <h3>Montant</h3>\n\n                <ion-note item-right>{{property.price}}</ion-note>\n\n            </ion-item>\n\n            <ion-item>\n\n                   <ion-icon item-left name="md-clock"></ion-icon>\n\n                    <h3>Date </h3>\n\n                    <ion-note item-right>20/05/2018 ,12:27 </ion-note>\n\n                </ion-item>\n\n        </ion-list>\n\n\n\n        <ion-item>\n\n            <button ion-button icon-left (click)="favorite(property)" clear item-left>\n\n                <ion-icon name="md-checkmark"></ion-icon>\n\n                Valider la transaction\n\n            </button>\n\n          \n\n        </ion-item>\n\n\n\n    </ion-card>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\transfert-detail\transfert-detail.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* ActionSheetController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_2__providers_transfert_service_mock__["a" /* TransfertService */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["k" /* ToastController */]])
 ], TransfertDetailPage);
@@ -182,7 +182,7 @@ TransfertDetailPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MessagePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -221,7 +221,7 @@ var MessagePage = (function () {
 }());
 MessagePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-message',template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\pages\message\message.html"*/'<!--\n\n  Generated template for the MessagePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    <ion-title>message</ion-title>\n\n    \n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-card>\n\n        <ion-card-header>\n\n         Saisir message info\n\n        </ion-card-header>\n\n      \n\n        <ion-list>\n\n           <ion-item>\n\n              <ion-label color="primary">Nom</ion-label>\n\n              <ion-input placeholder=" votre nom"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label color="primary">Email </ion-label>\n\n              <ion-input placeholder="votre email "></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label color="primary">Titre</ion-label>\n\n              <ion-input placeholder="titre"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label color="primary">Message</ion-label>\n\n                <ion-input placeholder="ecrire"></ion-input>\n\n              </ion-item>\n\n            <ion-item>\n\n                <button ion-button round (click)="presentAlert()"><ion-icon name="md-paper-plane" ></ion-icon></button>\n\n            </ion-item>\n\n          </ion-list>\n\n      </ion-card>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\pages\message\message.html"*/,
+        selector: 'page-message',template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\message\message.html"*/'<!--\n\n  Generated template for the MessagePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    <ion-title>message</ion-title>\n\n    \n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n    <ion-card>\n\n        <ion-card-header>\n\n         Saisir message info\n\n        </ion-card-header>\n\n      \n\n        <ion-list>\n\n           <ion-item>\n\n              <ion-label color="primary">Nom</ion-label>\n\n              <ion-input placeholder=" votre nom"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label color="primary">Email </ion-label>\n\n              <ion-input placeholder="votre email "></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label color="primary">Titre</ion-label>\n\n              <ion-input placeholder="titre"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label color="primary">Message</ion-label>\n\n                <ion-input placeholder="ecrire"></ion-input>\n\n              </ion-item>\n\n            <ion-item>\n\n                <button ion-button round (click)="presentAlert()"><ion-icon name="md-paper-plane" ></ion-icon></button>\n\n            </ion-item>\n\n          </ion-list>\n\n      </ion-card>\n\n\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\message\message.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
 ], MessagePage);
@@ -270,7 +270,7 @@ webpackEmptyAsyncContext.id = 128;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return WelcomePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -290,7 +290,7 @@ var WelcomePage = (function () {
 }());
 WelcomePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-welcome',template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\pages\welcome\welcome.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>Welcome</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content no-bounce>\n\n    <ion-slides>\n\n        <ion-slide style="background-image: url(\'assets/img/1.jpg\')">\n\n            <p>Money Transfert</p>\n\n        </ion-slide>\n\n\n\n        <ion-slide style="background-image: url(\'assets/img/1.jpg\')">\n\n            <p>En Mauritanie...</p>\n\n        </ion-slide>\n\n\n\n    </ion-slides>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\pages\welcome\welcome.html"*/
+        selector: 'page-welcome',template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\welcome\welcome.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>Welcome</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content no-bounce>\n\n    <ion-slides>\n\n        <ion-slide style="background-image: url(\'assets/img/1.jpg\')">\n\n            <p>Money Transfert</p>\n\n        </ion-slide>\n\n\n\n        <ion-slide style="background-image: url(\'assets/img/1.jpg\')">\n\n            <p>En Mauritanie...</p>\n\n        </ion-slide>\n\n\n\n    </ion-slides>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\welcome\welcome.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
 ], WelcomePage);
@@ -305,7 +305,7 @@ WelcomePage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -325,7 +325,7 @@ var AboutPage = (function () {
 }());
 AboutPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-about',template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\pages\about\about.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>About</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n\n    \n\n    <div padding class="about-info">\n\n        <h4>Transfert d\'argant</h4>\n\n        <p>\n            Developper par Mima & Lala\n        </p>\n\n    </div>\n\n</ion-content>\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\pages\about\about.html"*/
+        selector: 'page-about',template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\about\about.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>About</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n\n\n    \n\n\n\n    <div padding class="about-info">\n\n\n\n        <h4>Transfert d\'argant</h4>\n\n\n\n        <p>\n\n            Developper par Mima & Lala\n\n        </p>\n\n\n\n    </div>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\about\about.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]])
 ], AboutPage);
@@ -340,7 +340,7 @@ AboutPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ValidationListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__providers_transfert_service_mock__ = __webpack_require__(50);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__transfert_detail_transfert_detail__ = __webpack_require__(104);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -382,7 +382,7 @@ var ValidationListPage = (function () {
 }());
 ValidationListPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-validation-list',template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\pages\validation-list\validation-list.html"*/'<ion-header>\n    <ion-navbar>\n        <button ion-button menuToggle>\n            <ion-icon name="menu"></ion-icon>\n        </button>\n        <ion-title>Tx valide</ion-title>\n    </ion-navbar>\n</ion-header>\n\n<ion-content>\n    <ion-list>\n        <ion-item-sliding *ngFor="let favorite of favorites">\n            <button ion-item (click)="itemTapped(favorite)">\n                <ion-thumbnail item-left>\n                    <img src="{{favorite.property.thumbnail}}"/>\n                </ion-thumbnail>\n                <h2>{{favorite.property.title}}</h2>\n                <p>{{favorite.property.city}}, {{favorite.property.state}} ∙ {{favorite.property.price}}</p>\n            </button>\n            <ion-item-options>\n                <button danger (click)="deleteItem(favorite)">Delete</button>\n            </ion-item-options>\n        </ion-item-sliding>\n    </ion-list>\n</ion-content>\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\pages\validation-list\validation-list.html"*/
+        selector: 'page-validation-list',template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\validation-list\validation-list.html"*/'<ion-header>\n\n    <ion-navbar>\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>Tx valide</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n    <ion-list>\n\n        <ion-item-sliding *ngFor="let favorite of favorites">\n\n            <button ion-item (click)="itemTapped(favorite)">\n\n                <ion-thumbnail item-left>\n\n                    <img src="{{favorite.property.thumbnail}}"/>\n\n                </ion-thumbnail>\n\n                <h2>{{favorite.property.title}}</h2>\n\n                <p>{{favorite.property.city}}, {{favorite.property.state}} ∙ {{favorite.property.price}}</p>\n\n            </button>\n\n            <ion-item-options>\n\n                <button danger (click)="deleteItem(favorite)">Delete</button>\n\n            </ion-item-options>\n\n        </ion-item-sliding>\n\n    </ion-list>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\validation-list\validation-list.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_2__providers_transfert_service_mock__["a" /* TransfertService */]])
 ], ValidationListPage);
@@ -397,7 +397,7 @@ ValidationListPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SendMoneyPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -436,7 +436,7 @@ var SendMoneyPage = (function () {
 }());
 SendMoneyPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-send-money',template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\pages\send-money\send-money.html"*/'<!--\n\n  Generated template for the SendMoneyPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header >\n\n\n\n    <ion-navbar [hideBackButton]="true">\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>Envoi d\'argant</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n    <ion-card>\n\n        <ion-card-header>\n\n         Saisir transaction info\n\n        </ion-card-header>\n\n      \n\n        <ion-list>\n\n           <ion-item>\n\n              <ion-label color="primary">Num de CmptS</ion-label>\n\n              <ion-input placeholder=" Num de compte sender"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label color="primary">Num de CmptR</ion-label>\n\n              <ion-input placeholder="Num de compte Receiver "></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label color="primary">Montant</ion-label>\n\n              <ion-input placeholder="montant"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label color="primary">Description</ion-label>\n\n                <ion-input placeholder="Description"></ion-input>\n\n              </ion-item>\n\n            <ion-item>\n\n                <button ion-button round (click)="presentAlert()"><ion-icon name="md-paper-plane" ></ion-icon></button>\n\n            </ion-item>\n\n          </ion-list>\n\n      </ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\pages\send-money\send-money.html"*/,
+        selector: 'page-send-money',template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\send-money\send-money.html"*/'<!--\n\n  Generated template for the SendMoneyPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header >\n\n\n\n    <ion-navbar [hideBackButton]="true">\n\n        <button ion-button menuToggle>\n\n            <ion-icon name="menu"></ion-icon>\n\n        </button>\n\n        <ion-title>Envoi d\'argant</ion-title>\n\n    </ion-navbar>\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n    <ion-card>\n\n        <ion-card-header>\n\n         Saisir transaction info\n\n        </ion-card-header>\n\n      \n\n        <ion-list>\n\n           <ion-item>\n\n              <ion-label color="primary">Num de CmptS</ion-label>\n\n              <ion-input name="IdS" #IdS="ngModel" [(ngModel)]="moneyServices.selectedListeMoney.IdS"  placeholder=" Num de compte sender"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label color="primary">Num de CmptR</ion-label>\n\n              <ion-input #IdR="ngModel" [(ngModel)]="moneyServices.selectedListeMoney.IdR" placeholder="Num de compte Receiver "></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label color="primary">Montant</ion-label>\n\n              <ion-input  #Montant="ngModel" [(ngModel)]="moneyServices.selectedListeMoney.Montant" placeholder="montant"></ion-input>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label color="primary">Description</ion-label>\n\n                <ion-input  #DescArg="ngModel" [(ngModel)]="moneyServices.selectedListeMoney.DescArg" placeholder="Description"></ion-input>\n\n              </ion-item>\n\n            <ion-item>\n\n                <button ion-button round (click)="presentAlert()"><ion-icon name="md-paper-plane" ></ion-icon></button>\n\n            </ion-item>\n\n          </ion-list>\n\n      </ion-card>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\send-money\send-money.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
 ], SendMoneyPage);
@@ -451,7 +451,7 @@ SendMoneyPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return LoginPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__transfert_list_transfert_list__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__map_map__ = __webpack_require__(249);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__message_message__ = __webpack_require__(105);
@@ -523,12 +523,11 @@ var LoginPage = (function () {
 }());
 LoginPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-login',template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<style type="text/css">\n\n::-webkit-input-placeholder{\n\n  color: rgba(51, 45, 148, 0.726) !important;\n\n}\n\n:-moz-placeholder{\n\n  color:rgb(56, 39, 119)ff !important;\n\n}\n\n:-ms-placeholder{\n\n  color: rgb(96, 43, 146) !important;\n\n}\n\n\n\n.logo{\n\n  margin-top: 5px;\n\n  margin-left: 60px;\n\n  width: 200px;\n\n  height: 200px;\n\n}\n\n</style>\n\n\n\n\n\n\n\n<ion-header>\n\n\n\n \n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding style=" background-color:rgba(252, 252, 253, 0.993) ;background-size:100% 100%">\n\n\n\n\n\n\n\n<ion-grid>\n\n\n\n  <ion-row>\n\n    <ion-col col-4>\n\n      <ion-col col-4 styl="margin-left:auto ;margin-right :auto;display:block;">\n\n        <img scr="url(\'assets/img/zt.jpg\')" style="width:100%;height:auto;\n\n        border-radius:100%"> \n\n      </ion-col>\n\n      <ion-col col-4></ion-col>\n\n    </ion-col>\n\n  </ion-row>\n\n</ion-grid>\n\n\n\n\n\n\n\n\n\n    <ion-slides>\n\n\n\n        <ion-slide>\n\n            <ion-list  tyle=" background-color:rgba(84, 53, 156, 0.993) ;background-size:100% 100%" >\n\n                  <ion-item class="item"style="margin-top:30px;margin-bottom:30px;background-color:rgb(203, 227, 236);">\n\n                      \n\n                   <img class="logo" src="../assets/img/zt.jpg" />\n\n                  </ion-item>\n\n                    <ion-item class="item"style="margin-top:30px;margin-bottom:30px;background-color:rgb(203, 227, 236);">\n\n                      \n\n                      <ion-input type="email" [(ngModel)]="username" name="username" placeholder="Email"></ion-input>\n\n                    </ion-item>\n\n                    \n\n                    <ion-item class="item" style="margin-top:30px;margin-bottom:30px;background-color:rgb(203, 227, 236);">\n\n                      \n\n                      <ion-input type="password" [(ngModel)]="password" name="pass"  placeholder="password"></ion-input>\n\n                    </ion-item>      \n\n                  \n\n                    <ion-row>\n\n                      <ion-col text-center>\n\n                        <button style="margin-top:15px ;height:35px;font-size:14px;background:#10ABF4;" ion-button  (click)="login()">\n\n                            Connecter\n\n                        </button>\n\n                      </ion-col>\n\n                    </ion-row>  \n\n            </ion-list>\n\n\n\n        </ion-slide>\n\n      </ion-slides>\n\n\n\n      <ion-fab bottom right >\n\n          <button ion-fab color="primary" ><ion-icon name="add"></ion-icon></button>\n\n          \n\n          <ion-fab-list side="top" >\n\n            <button ion-fab (click)="map()"><ion-icon name="md-map"></ion-icon></button>\n\n            <button ion-fab (click)="contact()" ><ion-icon name="md-mail"></ion-icon></button>\n\n            \n\n          </ion-fab-list>\n\n        </ion-fab>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\pages\login\login.html"*/,
+        selector: 'page-login',template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\login\login.html"*/'<!--\n\n  Generated template for the LoginPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n\n\n\n\n<ion-content padding style="background-image: url(\'assets/img/home.jpg\');background-repeat: no-reapit; background-size:100% 100%">\n\n  <ion-grid>\n\n    <ion-row>\n\n      <ion-col col-12 style="margin-left:auto ;margin-right :auto;display:block;width:100px;height:100px;" ></ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n<ion-grid >\n\n<ion-row>\n\n    <ion-col col-4></ion-col>\n\n      <ion-col col-4 style="margin-left:auto ;margin-right :auto;display:block;">\n\n        <img  src="../assets/img/nnm.png" style=" width:100%;height: auto;\n\n        border-radius: 100%;"> \n\n      </ion-col>\n\n      <ion-col col-4></ion-col>\n\n  </ion-row>\n\n</ion-grid>\n\n\n\n\n\n\n\n            <ion-list  style="margin-top:30px;margin-bottom:30px" >\n\n                 \n\n                    <ion-item class="item"style="margin-top:30px;margin-bottom:30px;">\n\n                      \n\n                      <ion-input type="email" [(ngModel)]="username" name="username" placeholder="Email"></ion-input>\n\n                    </ion-item>\n\n                    \n\n                    <ion-item class="item" style="margin-top:30px;margin-bottom:30px;">\n\n                      \n\n                      <ion-input type="password" [(ngModel)]="password" name="pass"  placeholder="password"></ion-input>\n\n                    </ion-item>      \n\n                  \n\n                    <ion-row>\n\n                      <ion-col text-center>\n\n                        <button style="margin-top:15px ;height:35px;font-size:14px;background:rgb(32, 48, 54);" ion-button  (click)="login()">\n\n                            Connecter\n\n                        </button>\n\n                      </ion-col>\n\n                    </ion-row>    \n\n            </ion-list>\n\n\n\n       \n\n\n\n      <ion-fab bottom right >\n\n          <button ion-fab color="Primary" ><ion-icon name="add"></ion-icon></button>\n\n          \n\n          <ion-fab-list side="top" >\n\n            <button ion-fab (click)="map()"><ion-icon name="md-map"></ion-icon></button>\n\n            <button ion-fab (click)="contact()" ><ion-icon name="md-mail"></ion-icon></button>\n\n            \n\n          </ion-fab-list>\n\n        </ion-fab>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\login\login.html"*/,
     }),
-    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]) === "function" && _c || Object])
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["b" /* AlertController */]])
 ], LoginPage);
 
-var _a, _b, _c;
 //# sourceMappingURL=login.js.map
 
 /***/ }),
@@ -539,7 +538,7 @@ var _a, _b, _c;
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MapPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_leaflet__ = __webpack_require__(245);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_leaflet___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_leaflet__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
@@ -589,7 +588,7 @@ var MapPage = (function () {
 }());
 MapPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-map',template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\pages\map\map.html"*/'<!--\n\n  Generated template for the MapPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>map</ion-title>\n\n   \n\n  </ion-navbar>\n\n  \n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <div *ngIf="viewMode===\'map\'" style="width:100%;height:100%;" id="map"></div>\n\n  <div ></div>\n\n</ion-content>\n\n<ion-footer padding>\n\n    <ion-segment [(ngModel)]="viewMode">\n\n        <ion-segment-button value="map" (ionSelect)="showMap()">\n\n            <ion-icon name="map"></ion-icon>\n\n        </ion-segment-button>\n\n    </ion-segment>\n\n</ion-footer>\n\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\pages\map\map.html"*/,
+        selector: 'page-map',template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\map\map.html"*/'<!--\n\n  Generated template for the MapPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>map</ion-title>\n\n   \n\n  </ion-navbar>\n\n  \n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n  <div *ngIf="viewMode===\'map\'" style="width:100%;height:100%;" id="map"></div>\n\n  <div ></div>\n\n</ion-content>\n\n<ion-footer padding>\n\n    <ion-segment [(ngModel)]="viewMode">\n\n        <ion-segment-button value="map" (ionSelect)="showMap()">\n\n            <ion-icon name="map"></ion-icon>\n\n        </ion-segment-button>\n\n    </ion-segment>\n\n</ion-footer>\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\map\map.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
 ], MapPage);
@@ -604,7 +603,7 @@ MapPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NotificationPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -634,7 +633,7 @@ var NotificationPage = (function () {
 }());
 NotificationPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-notification',template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\pages\notification\notification.html"*/'<!--\n\n  Generated template for the NotificationPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    <ion-title>notification</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\pages\notification\notification.html"*/,
+        selector: 'page-notification',template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\notification\notification.html"*/'<!--\n\n  Generated template for the NotificationPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    <ion-title>notification</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\notification\notification.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
 ], NotificationPage);
@@ -649,7 +648,7 @@ NotificationPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ProfilePage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -679,7 +678,7 @@ var ProfilePage = (function () {
 }());
 ProfilePage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-profile',template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\pages\profile\profile.html"*/'<!--\n\n  Generated template for the ProfilePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>profile</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\pages\profile\profile.html"*/,
+        selector: 'page-profile',template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\profile\profile.html"*/'<!--\n\n  Generated template for the ProfilePage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    <ion-title>profile</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\profile\profile.html"*/,
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
 ], ProfilePage);
@@ -710,7 +709,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__ = __webpack_require__(28);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_http__ = __webpack_require__(271);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__app_component__ = __webpack_require__(310);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_welcome_welcome__ = __webpack_require__(243);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_about_about__ = __webpack_require__(244);
@@ -821,7 +820,7 @@ AppModule = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(239);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(242);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_welcome_welcome__ = __webpack_require__(243);
@@ -899,7 +898,7 @@ __decorate([
     __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Nav */])
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
-    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\app\app.html"*/'<ion-menu [content]="content">\n\n\n\n  <ion-content>\n\n\n\n    <img class="menu-logo" src="../assets/img/zt.jpg" />\n\n\n\n    <ion-list>\n\n      <ion-list-header>\n\n        \n\n      </ion-list-header >\n\n      <button menuClose ion-item *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">\n\n        <ion-icon item-left [name]="menuItem.icon"></ion-icon>\n\n        {{menuItem.title}}\n\n      </button>\n\n    </ion-list>\n\n\n\n    <ion-list>\n\n      <ion-list-header>\n\n        Help\n\n      </ion-list-header>\n\n      <button menuClose ion-item *ngFor="let menuItem of helpMenuItems" (click)="openPage(menuItem)">\n\n        <ion-icon item-left [name]="menuItem.icon"></ion-icon>\n\n        {{menuItem.title}}\n\n      </button>\n\n    </ion-list>\n\n\n\n    <ion-list>\n\n      <ion-list-header>\n\n        Account\n\n      </ion-list-header>\n\n      <button menuClose ion-item *ngFor="let menuItem of accountMenuItems" (click)="openPage(menuItem)">\n\n        <ion-icon item-left [name]="menuItem.icon"></ion-icon>\n\n        {{menuItem.title}}\n\n      </button>\n\n    </ion-list>\n\n\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false" hideBackButton="true"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\app\app.html"*/
+    Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\app\app.html"*/'<ion-menu [content]="content">\n\n\n\n  <ion-content>\n\n\n\n    <img class="menu-logo" src="../assets/img/zt.jpg" />\n\n\n\n    <ion-list>\n\n      <ion-list-header>\n\n        \n\n      </ion-list-header >\n\n      <button menuClose ion-item *ngFor="let menuItem of appMenuItems" (click)="openPage(menuItem)">\n\n        <ion-icon item-left [name]="menuItem.icon"></ion-icon>\n\n        {{menuItem.title}}\n\n      </button>\n\n    </ion-list>\n\n\n\n    <ion-list>\n\n      <ion-list-header>\n\n        Help\n\n      </ion-list-header>\n\n      <button menuClose ion-item *ngFor="let menuItem of helpMenuItems" (click)="openPage(menuItem)">\n\n        <ion-icon item-left [name]="menuItem.icon"></ion-icon>\n\n        {{menuItem.title}}\n\n      </button>\n\n    </ion-list>\n\n\n\n    <ion-list>\n\n      <ion-list-header>\n\n        Account\n\n      </ion-list-header>\n\n      <button menuClose ion-item *ngFor="let menuItem of accountMenuItems" (click)="openPage(menuItem)">\n\n        <ion-icon item-left [name]="menuItem.icon"></ion-icon>\n\n        {{menuItem.title}}\n\n      </button>\n\n    </ion-list>\n\n\n\n  </ion-content>\n\n\n\n</ion-menu>\n\n\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false" hideBackButton="true"></ion-nav>\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\app\app.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
 ], MyApp);
@@ -990,7 +989,9 @@ var properties = [
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ValidationPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validation_validationService__ = __webpack_require__(323);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__validation_validationService___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2__validation_validationService__);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1002,6 +1003,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 
 
+
 /**
  * Generated class for the ValidationPage page.
  *
@@ -1009,7 +1011,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  * on Ionic pages and navigation.
  */
 var ValidationPage = (function () {
-    function ValidationPage(navCtrl, navParams) {
+    function ValidationPage(navCtrl, navParams, valideService) {
         this.navCtrl = navCtrl;
         this.navParams = navParams;
     }
@@ -1020,11 +1022,13 @@ var ValidationPage = (function () {
 }());
 ValidationPage = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-validation',template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\pages\validation\validation.html"*/'<!--\n\n  Generated template for the ValidationPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    <ion-title>validation</ion-title>\n\n\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n    <ion-card>\n\n        <ion-card-header>\n\n          Transaction  info\n\n        </ion-card-header>\n\n      \n\n        <ion-list>\n\n            <ion-item>\n\n              <ion-label color="primary">Num CmptD</ion-label>\n\n              <ion-label >0035</ion-label>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label color="primary"> description d\'argent</ion-label>\n\n              <ion-label >Sidi vers Ali</ion-label>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label color="primary">Montant</ion-label>\n\n                <ion-label >20000 Un</ion-label>\n\n              </ion-item>\n\n            </ion-list>\n\n          </ion-card>\n\n          <ion-card>\n\n              <ion-card-header>\n\n               Saisir Validation info\n\n              </ion-card-header>\n\n            <ion-list>\n\n                <ion-item>\n\n                  <ion-label color="primary">INN </ion-label>\n\n                  <ion-input placeholder="INN de destinataire"></ion-input>\n\n                </ion-item>\n\n                   <ion-item>\n\n                <button ion-button round (click)="presentAlert()">Valider</button>\n\n            </ion-item>\n\n                </ion-list>\n\n            \n\n\n\n         \n\n      </ion-card>\n\n\n\n</ion-content>\n\n\n\n\n\n\n\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\pages\validation\validation.html"*/,
+        selector: 'page-validation',template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\validation\validation.html"*/'<!--\n\n  Generated template for the ValidationPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n      <button ion-button menuToggle>\n\n          <ion-icon name="menu"></ion-icon>\n\n      </button>\n\n    <ion-title>validation</ion-title>\n\n\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n<ion-content padding>\n\n\n\n    <ion-card>\n\n        <ion-card-header>\n\n          Transaction  info\n\n        </ion-card-header>\n\n      \n\n        <ion-list>\n\n            <ion-item>\n\n              <ion-label color="primary">Num CmptD</ion-label>\n\n              <ion-label >0035</ion-label>\n\n            </ion-item>\n\n            <ion-item>\n\n              <ion-label color="primary"> description d\'argent</ion-label>\n\n              <ion-label >Sidi vers Ali</ion-label>\n\n            </ion-item>\n\n            <ion-item>\n\n                <ion-label color="primary">Montant</ion-label>\n\n                <ion-label >20000 Un</ion-label>\n\n              </ion-item>\n\n            </ion-list>\n\n          </ion-card>\n\n          <ion-card>\n\n              <ion-card-header>\n\n               Saisir Validation info\n\n              </ion-card-header>\n\n            <ion-list>\n\n                <ion-item>\n\n                  <ion-label color="primary">INN </ion-label>\n\n                  <ion-input name="INN" #INN="ngModel" [(ngModel)]="validationServices.selectedValideListe.INN" placeholder="INN de destinataire"></ion-input>\n\n                </ion-item>\n\n                   <ion-item>\n\n                <button ion-button round (click)="presentAlert()">Valider</button>\n\n            </ion-item>\n\n                </ion-list>\n\n            \n\n\n\n         \n\n      </ion-card>\n\n\n\n</ion-content>\n\n\n\n\n\n\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\validation\validation.html"*/,
+        providers: [__WEBPACK_IMPORTED_MODULE_2__validation_validationService__["valideServices"]],
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
+    __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__validation_validationService__["valideServices"] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__validation_validationService__["valideServices"]) === "function" && _c || Object])
 ], ValidationPage);
 
+var _a, _b, _c;
 //# sourceMappingURL=validation.js.map
 
 /***/ }),
@@ -1035,7 +1039,7 @@ ValidationPage = __decorate([
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(12);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(10);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1075,13 +1079,20 @@ var ListPage = ListPage_1 = (function () {
 }());
 ListPage = ListPage_1 = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-        selector: 'page-list',template:/*ion-inline-start:"C:\Users\pc\Desktop\z-transfer\src\pages\list\list.html"*/'<ion-header > \n  <ion-navbar hideBackButton="true">\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-right>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\Users\pc\Desktop\z-transfer\src\pages\list\list.html"*/
+        selector: 'page-list',template:/*ion-inline-start:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\list\list.html"*/'<ion-header > \n\n  <ion-navbar hideBackButton="true">\n\n    <button ion-button menuToggle>\n\n      <ion-icon name="menu"></ion-icon>\n\n    </button>\n\n    <ion-title>List</ion-title>\n\n  </ion-navbar>\n\n</ion-header>\n\n\n\n<ion-content>\n\n  <ion-list>\n\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n\n      {{item.title}}\n\n      <div class="item-note" item-right>\n\n        {{item.note}}\n\n      </div>\n\n    </button>\n\n  </ion-list>\n\n  <div *ngIf="selectedItem" padding>\n\n    You navigated here from <b>{{selectedItem.title}}</b>\n\n  </div>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\mima\Desktop\z\Z-transfert\src\pages\list\list.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["h" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavParams */]])
 ], ListPage);
 
 var ListPage_1;
 //# sourceMappingURL=list.js.map
+
+/***/ }),
+
+/***/ 323:
+/***/ (function(module, exports) {
+
+//# sourceMappingURL=validationService.js.map
 
 /***/ }),
 

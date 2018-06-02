@@ -3,10 +3,13 @@ import {Config, NavController} from 'ionic-angular';
 import leaflet from 'leaflet';
 import { TransfertService } from '../../providers/transfert-service-mock';
 import { TransfertDetailPage } from '../transfert-detail/transfert-detail';
+import {moneyServices} from '../send-money/send-money.service';
 
 @Component({
     selector: 'page-transfert-list',
-    templateUrl: 'transfert-list.html'
+    templateUrl: 'transfert-list.html',
+    providers:[moneyServices]
+
 })
 export class TransfertListPage {
 
@@ -16,7 +19,7 @@ export class TransfertListPage {
     map;
     markersGroup;
 
-    constructor(public navCtrl: NavController, public service: TransfertService, public config: Config) {
+    constructor(public navCtrl: NavController, public service: TransfertService, public config: Config, moneyService :moneyServices) {
         this.findAll();
     }
 

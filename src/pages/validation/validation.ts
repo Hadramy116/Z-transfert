@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {  NavController, NavParams } from 'ionic-angular';
+import {valideServices} from '../validation/validationService';
 
 /**
  * Generated class for the ValidationPage page.
@@ -11,10 +12,11 @@ import {  NavController, NavParams } from 'ionic-angular';
 @Component({
   selector: 'page-validation',
   templateUrl: 'validation.html',
+  providers: [valideServices],
 })
 export class ValidationPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,valideService :valideServices) {
   }
 
   ionViewDidLoad() {

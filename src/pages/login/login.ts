@@ -59,6 +59,8 @@ export class LoginPage {
     alert.present();
   }
 
+  
+
   map() {
     this.navCtrl.push(MapPage);
   }

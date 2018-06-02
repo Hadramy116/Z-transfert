@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams, AlertController } from 'ionic-angular';
-
+import {moneyServices} from '../send-money/send-money.service';
 
 /**
  * Generated class for the SendMoneyPage page.
@@ -11,11 +11,17 @@ import { NavController, NavParams, AlertController } from 'ionic-angular';
 @Component({
   selector: 'page-send-money',
   templateUrl: 'send-money.html',
+  providers: [moneyServices],
 })
 export class SendMoneyPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private alertCtrl: AlertController,moneyService :moneyServices) {
   }
+
+
+
+
+
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad SendMoneyPage');

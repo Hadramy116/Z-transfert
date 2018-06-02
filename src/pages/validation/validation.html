@@ -45,7 +45,7 @@
             <ion-list>
                 <ion-item>
                   <ion-label color="primary">INN </ion-label>
-                  <ion-input placeholder="INN de destinataire"></ion-input>
+                  <ion-input name="INN" #INN="ngModel" [(ngModel)]="validationServices.selectedValideListe.INN" placeholder="INN de destinataire"></ion-input>
                 </ion-item>
                    <ion-item>
                 <button ion-button round (click)="presentAlert()">Valider</button>

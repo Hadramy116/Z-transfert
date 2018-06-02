@@ -4,86 +4,52 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<style type="text/css">
-::-webkit-input-placeholder{
-  color: rgba(51, 45, 148, 0.726) !important;
-}
-:-moz-placeholder{
-  color:rgb(56, 39, 119)ff !important;
-}
-:-ms-placeholder{
-  color: rgb(96, 43, 146) !important;
-}
-
-.logo{
-  margin-top: 5px;
-  margin-left: 60px;
-  width: 200px;
-  height: 200px;
-}
-</style>
 
 
-
-<ion-header>
-
- 
-
-</ion-header>
-
-
-<ion-content padding style=" background-color:rgba(252, 252, 253, 0.993) ;background-size:100% 100%">
-
-
-
-<ion-grid>
-
-  <ion-row>
-    <ion-col col-4>
-      <ion-col col-4 styl="margin-left:auto ;margin-right :auto;display:block;">
-        <img scr="url('assets/img/zt.jpg')" style="width:100%;height:auto;
-        border-radius:100%"> 
+<ion-content padding style="background-image: url('assets/img/home.jpg');background-repeat: no-reapit; background-size:100% 100%">
+  <ion-grid>
+    <ion-row>
+      <ion-col col-12 style="margin-left:auto ;margin-right :auto;display:block;width:100px;height:100px;" ></ion-col>
+    </ion-row>
+  </ion-grid>
+<ion-grid >
+<ion-row>
+    <ion-col col-4></ion-col>
+      <ion-col col-4 style="margin-left:auto ;margin-right :auto;display:block;">
+        <img  src="../assets/img/nnm.png" style=" width:100%;height: auto;
+        border-radius: 100%;"> 
       </ion-col>
       <ion-col col-4></ion-col>
-    </ion-col>
   </ion-row>
 </ion-grid>
 
 
 
-
-    <ion-slides>
-
-        <ion-slide>
-            <ion-list  tyle=" background-color:rgba(84, 53, 156, 0.993) ;background-size:100% 100%" >
-                  <ion-item class="item"style="margin-top:30px;margin-bottom:30px;background-color:rgb(203, 227, 236);">
-                      
-                   <img class="logo" src="../assets/img/zt.jpg" />
-                  </ion-item>
-                    <ion-item class="item"style="margin-top:30px;margin-bottom:30px;background-color:rgb(203, 227, 236);">
+            <ion-list  style="margin-top:30px;margin-bottom:30px" >
+                 
+                    <ion-item class="item"style="margin-top:30px;margin-bottom:30px;">
                       
                       <ion-input type="email" [(ngModel)]="username" name="username" placeholder="Email"></ion-input>
                     </ion-item>
                     
-                    <ion-item class="item" style="margin-top:30px;margin-bottom:30px;background-color:rgb(203, 227, 236);">
+                    <ion-item class="item" style="margin-top:30px;margin-bottom:30px;">
                       
                       <ion-input type="password" [(ngModel)]="password" name="pass"  placeholder="password"></ion-input>
                     </ion-item>      
                   
                     <ion-row>
                       <ion-col text-center>
-                        <button style="margin-top:15px ;height:35px;font-size:14px;background:#10ABF4;" ion-button  (click)="login()">
+                        <button style="margin-top:15px ;height:35px;font-size:14px;background:rgb(32, 48, 54);" ion-button  (click)="login()">
                             Connecter
                         </button>
                       </ion-col>
-                    </ion-row>  
+                    </ion-row>    
             </ion-list>
 
-        </ion-slide>
-      </ion-slides>
+       
 
       <ion-fab bottom right >
-          <button ion-fab color="primary" ><ion-icon name="add"></ion-icon></button>
+          <button ion-fab color="Primary" ><ion-icon name="add"></ion-icon></button>
           
           <ion-fab-list side="top" >
             <button ion-fab (click)="map()"><ion-icon name="md-map"></ion-icon></button>

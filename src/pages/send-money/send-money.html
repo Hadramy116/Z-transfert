@@ -25,19 +25,19 @@
         <ion-list>
            <ion-item>
               <ion-label color="primary">Num de CmptS</ion-label>
-              <ion-input placeholder=" Num de compte sender"></ion-input>
+              <ion-input name="IdS" #IdS="ngModel" [(ngModel)]="moneyServices.selectedListeMoney.IdS"  placeholder=" Num de compte sender"></ion-input>
             </ion-item>
             <ion-item>
               <ion-label color="primary">Num de CmptR</ion-label>
-              <ion-input placeholder="Num de compte Receiver "></ion-input>
+              <ion-input #IdR="ngModel" [(ngModel)]="moneyServices.selectedListeMoney.IdR" placeholder="Num de compte Receiver "></ion-input>
             </ion-item>
             <ion-item>
               <ion-label color="primary">Montant</ion-label>
-              <ion-input placeholder="montant"></ion-input>
+              <ion-input  #Montant="ngModel" [(ngModel)]="moneyServices.selectedListeMoney.Montant" placeholder="montant"></ion-input>
             </ion-item>
             <ion-item>
                 <ion-label color="primary">Description</ion-label>
-                <ion-input placeholder="Description"></ion-input>
+                <ion-input  #DescArg="ngModel" [(ngModel)]="moneyServices.selectedListeMoney.DescArg" placeholder="Description"></ion-input>
               </ion-item>
             <ion-item>
                 <button ion-button round (click)="presentAlert()"><ion-icon name="md-paper-plane" ></ion-icon></button>
